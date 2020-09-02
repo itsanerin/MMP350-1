@@ -1,0 +1,15 @@
+body {
+	font-family: Helvetica;
+	background-color: orange;
+	color: black;
+}
+
+h1 {
+	font-family: Impact;
+	color: black;
+}
+
+img {
+	width: 50%;
+	height: auto;
+}
