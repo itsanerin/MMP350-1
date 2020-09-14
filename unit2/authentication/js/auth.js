@@ -1,27 +1,24 @@
 // this is my auth.js file
-const signupButton = document.getElementById('submit-sign-up');
-const signupUsername = document.getElementById('sign-up-username');
-const signupEmail = document.getElementById('sign-up-email');
-const signupPassword = document.getElementById('sign-up-password');
+const loginButton = document.getElementById('login-button');
+const loginEmail = document.getElementById('login-email');
+const loginPassword = document.getElementById('login-password');
 
-function createUser(){
-	const email = signupEmail.value;
-	const password = signupPassword.value;
-	firebase.auth().createUserWithEmailAndPassword(email, password);
+loginButton.onclick = function() {
+	const email = loginEmail.value;
+	const password = loginPassword.value;
+
+	// this auth method is a simple method that doesn't use promises
+	// we are commenting it out for now.
+	/*
+	firebase.auth().signInWithEmailAndPassword(email, password);
+	*/
+	const promise = firebase.auth().signInWithEmailAndPassword(email, password);
+	// if it works, say we succeeded!
+	promise.then(alert("Successfully Logged In!"));
+
+	// if it doesn't work, give an error message
+	promise.catch(function(error) {
+		console.log(error);
+		alert(error.message);
+	});
 }
-signupButton.onclick = createUser;
-
-const promise = auth.createUserWithEmailAndPassword(email, password);
-promise.then(updateUser);
-
-function updateUser(credential){
-	const userInfo= {
-		displayName: signupUsername.value
-	};
-	credential.user.updateProfile(userInfo);
-}
-
-promis.catch(function(error){
-	console.log(error);
-	alert(error.message);
-})
