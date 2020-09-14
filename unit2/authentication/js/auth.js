@@ -1,8 +1,8 @@
 // this is my auth.js file
-const signupButton = document.getElementByID('submit-sign-up');
-const signupUsername = document.getElementByID('sign-up-username');
-const signupEmail = document.getElementByID('sign-up-email');
-const signupPassword = document.getElementByID('sign-up-password');
+const signupButton = document.getElementById('submit-sign-up');
+const signupUsername = document.getElementById('sign-up-username');
+const signupEmail = document.getElementById('sign-up-email');
+const signupPassword = document.getElementById('sign-up-password');
 
 function createUser(){
 	const email = signupEmail.value;
