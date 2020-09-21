@@ -1,0 +1,29 @@
+/*
+	font pairing 1
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Raleway', sans-serif;
+*/
+
+.post {
+	font-family: 'Oswald', sans-serif;
+}
+
+.post {
+	line-height: 1.2;
+}
+
+.post-text {
+	font-size: 3.25em;
+	font-family: 'Raleway', sans-serif;
+	word-spacing: .25em;
+	line-height: 1.25em;
+}
+
+.post-info {
+	font-size: 1.5em;
+	color: gray;
+}
+
+.post-author {
+	color: darkblue;
+}

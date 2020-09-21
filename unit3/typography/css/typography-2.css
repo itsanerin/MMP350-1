@@ -1,0 +1,30 @@
+/*
+	type pairing 2
+	font-family: 'Black Ops One', cursive;
+	font-family: 'Lato', sans-serif;
+*/
+
+.post,
+a {
+	font-family: 'Lato', sans-serif;
+}
+
+.post-text {
+	font-size: 300%;
+	color:gray;
+	font-family: 'Black Ops One', cursive;
+	line-height: 75%
+}
+
+.post-info{
+	padding-top:30px;
+}
+
+.post-author {
+	color: black;
+	font-size:120%;
+}
+
+.post-date {
+	color: gray;
+}
