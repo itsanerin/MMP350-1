@@ -6,17 +6,15 @@
 
 .post {
 	font-family: 'Oswald', sans-serif;
-}
-
-.post {
-	line-height: 1.2;
+	line-height: 3em;
 }
 
 .post-text {
 	font-size: 3.25em;
 	font-family: 'Raleway', sans-serif;
-	word-spacing: .25em;
+	word-spacing: 0.25em;
 	line-height: 1.25em;
+	background: pink;
 }
 
 .post-info {
